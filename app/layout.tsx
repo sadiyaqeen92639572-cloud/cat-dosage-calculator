@@ -17,8 +17,8 @@ const jetbrainsMono = JetBrains_Mono({
 export const metadata: Metadata = {
   title: 'Cat Medication Dosage by Weight | Gabapentin, Clavamox, Cerenia & More',
   description: 'Calculate common cat medication dosages by weight with easy, fast, and clear calculators. Includes Feline Gabapentin, Clavamox, Cerenia, Prednisolone, and more.',
-  metadataBase: new URL('https://gesime-admin.github.io/cat-dosage-calculator'),
-  alternates: { canonical: 'https://gesime-admin.github.io/cat-dosage-calculator/' },
+  metadataBase: new URL('https://sadiyaqeen92639572-cloud.github.io/cat-dosage-calculator'),
+  alternates: { canonical: 'https://sadiyaqeen92639572-cloud.github.io/cat-dosage-calculator/' },
 };
 
 export default function RootLayout({children}: {children: React.ReactNode}) {
