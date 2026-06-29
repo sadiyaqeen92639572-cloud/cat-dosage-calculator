@@ -37,7 +37,7 @@ Cats are not small dogs. Many medications safe for dogs are toxic to cats (Aceta
 ## Related
 
 - [Dog Medication Dosage Calculator](https://sadiyaqeen92639572-cloud.github.io/dog-dosage-calculator/) — same tool for canine medications
-- [Cat Food Monthly Cost Calculator](https://sadiyaqeen92639572-cloud.github.io/pet-food-cost-guide/) — find out exactly what you spend on cat food per day, month, and year. Accounts for wet, dry, and mixed feeding methods, plus activity level adjustments. Includes price benchmarks by brand tier so you can compare what you're paying against the market range.
+- [Cat Food Monthly Budget Calculator — with prescription and therapeutic diet benchmarks](https://sadiyaqeen92639572-cloud.github.io/pet-food-cost-guide/) — cats on Prednisolone for IBD often require hydrolyzed protein or novel protein therapeutic diets; cats on Methimazole for hyperthyroidism are frequently placed on Hill's Y/D (iodine-restricted), one of the most expensive prescription foods available; post-surgical cats on Buprenorphine or Cerenia often need high-calorie recovery food to restart appetite. This calculator breaks down exactly what those dietary changes cost per day, month, and year — across dry, wet, and mixed feeding — so you can budget for treatment and nutrition together.
 
 ## Disclaimer
 
