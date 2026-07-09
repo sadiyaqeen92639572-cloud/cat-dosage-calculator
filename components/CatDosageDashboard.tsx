@@ -1668,7 +1668,7 @@ export default function CatDosageDashboard() {
             <header className="p-6 border-b border-slate-100 flex items-center justify-between bg-pink-50/40">
               <div className="flex items-center gap-2">
                 <ShieldCheck className="w-5 h-5 text-pink-600" />
-                <h3 className="text-lg font-extrabold text-slate-950">About Our Medical Quality Control</h3>
+                <h3 className="text-lg font-extrabold text-slate-950">Editorial Standards &amp; Sources</h3>
               </div>
               <button 
                 onClick={() => setIsAboutModalOpen(false)}
