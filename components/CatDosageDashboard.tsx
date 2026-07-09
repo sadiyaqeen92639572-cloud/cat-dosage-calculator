@@ -1,7 +1,6 @@
 'use client';
 
 import React, { useState, useMemo } from 'react';
-import Image from 'next/image';
 import Link from 'next/link';
 import { 
   Search, 
@@ -27,7 +26,6 @@ import {
   ExternalLink
 } from 'lucide-react';
 import { catMedications, Medication, Formulation } from '../lib/catMedicationData';
-import drEmilyJenkins from '../src/assets/images/dr_emily_jenkins_1782681194365.jpg';
 
 export default function CatDosageDashboard() {
   // Profile state
@@ -240,14 +238,8 @@ export default function CatDosageDashboard() {
         },
         "author": {
           "@type": "Organization",
-          "name": "Dosage for Dogs Editorial Board",
-          "url": "https://dogdosagecalculators.com/#about-modal"
-        },
-        "reviewedBy": {
-          "@type": "Person",
-          "name": "Dr. Emily Jenkins, DVM",
-          "jobTitle": "Veterinarian",
-          "alumniOf": "University of Wisconsin School of Veterinary Medicine"
+          "name": "Dosage for Cats Editorial Team",
+          "url": "https://sadiyaqeen92639572-cloud.github.io/cat-dosage-calculator/#about-modal"
         }
       },
       {
@@ -379,14 +371,12 @@ export default function CatDosageDashboard() {
             Enter your cat’s weight and choose a medication to estimate the safe dosage range. Always confirm with a veterinarian before giving any medication.
           </p>
           
-          {/* Clinical Authority Bar */}
+          {/* Sources Bar */}
           <div className="mt-5 flex flex-wrap items-center justify-center gap-x-3 gap-y-1 text-[11px] text-slate-500 bg-white border border-slate-200 rounded-2xl py-2.5 px-4 max-w-2xl mx-auto shadow-sm">
             <span className="flex items-center gap-1 font-bold text-slate-700">
               <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
-              Medically Reviewed
+              Independent Reference Tool
             </span>
-            <span className="text-slate-300">|</span>
-            <span>By <strong>Dr. Emily Jenkins, DVM</strong></span>
             <span className="text-slate-300">|</span>
             <span>Last updated: <strong>June 29, 2026</strong></span>
             <span className="text-slate-300">|</span>
@@ -1700,7 +1690,7 @@ export default function CatDosageDashboard() {
               >
                 <div className="flex items-center gap-1.5">
                   <Users className="w-3.5 h-3.5" />
-                  Dr. Emily Jenkins, DVM
+                  Editorial Team
                 </div>
               </button>
               <button
@@ -1737,48 +1727,35 @@ export default function CatDosageDashboard() {
               {aboutActiveTab === 'board' && (
                 <div className="space-y-5 animate-in fade-in duration-200">
                   <div className="flex flex-col sm:flex-row gap-5 items-start bg-slate-50 border border-slate-100 p-5 rounded-2xl">
-                    <div className="relative w-24 h-24 rounded-2xl overflow-hidden bg-slate-200 border-2 border-white shadow-md shrink-0 mx-auto sm:mx-0">
-                      <Image 
-                        src={drEmilyJenkins} 
-                        alt="Dr. Emily Jenkins, DVM" 
-                        fill
-                        className="object-cover"
-                        referrerPolicy="no-referrer"
-                      />
+                    <div className="w-24 h-24 rounded-2xl bg-pink-50 border-2 border-white shadow-md shrink-0 mx-auto sm:mx-0 flex items-center justify-center text-pink-600">
+                      <ShieldCheck className="w-10 h-10" />
                     </div>
                     <div className="space-y-2 text-center sm:text-left flex-1 font-sans">
-                      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-1.5">
-                        <h4 className="text-base font-extrabold text-slate-950">
-                          Dr. Emily Jenkins, DVM
-                        </h4>
-                        <a 
-                          href="https://www.linkedin.com/in/dr-emily-jenkins-dvm-caninedose" 
-                          target="_blank" 
-                          rel="noopener noreferrer"
-                          className="inline-flex items-center justify-center gap-1 text-[11px] font-bold text-pink-600 hover:text-pink-700 bg-white border border-slate-200 rounded-lg py-1 px-2.5 shadow-sm hover:shadow-md transition-all self-center sm:self-start"
-                        >
-                          <span>LinkedIn Profile</span>
-                          <ExternalLink className="w-3 h-3" />
-                        </a>
-                      </div>
+                      <h4 className="text-base font-extrabold text-slate-950">
+                        Dosage for Cats Editorial Team
+                      </h4>
                       <p className="text-xs text-pink-700 font-bold uppercase tracking-wider">
-                        Chief Medical Reviewer &amp; Veterinarian
+                        Independent Reference Tool
                       </p>
                       <p className="text-xs text-slate-500 font-medium">
-                        DVM, University of Wisconsin School of Veterinary Medicine | 12+ Years Clinical Practice
+                        Not written or reviewed by a licensed veterinarian
                       </p>
                     </div>
                   </div>
 
                   <div className="space-y-3 font-sans">
                     <h5 className="font-extrabold text-slate-900 uppercase tracking-widest text-[10px]">
-                      Professional Biography
+                      How This Content Is Compiled
                     </h5>
                     <p>
-                      Dr. Emily Jenkins is a licensed small animal veterinarian dedicated to making veterinary science, drug transparency, and pet safety accessible to cat and dog parents worldwide. Over her twelve years in veterinary emergency medicine and general practice, she noticed a recurring and dangerous trend: accidental under-dosing or toxic over-dosing of common medications due to confusing paper guidelines or unreliable online forums.
+                      This calculator is an independent reference tool. Dosage ranges are compiled from published veterinary drug references — see the Editorial Methodology tab for the exact sources used — and cross-checked for consistency. No individual veterinarian has personally reviewed or endorsed this specific tool, and we do not claim otherwise.
                     </p>
                     <p>
-                      To combat this gap, Dr. Jenkins reviews and maintains the medical parameters for all 15 calculated formulations on Dosage for Cats. Each medication threshold, frequency indicator, and warning trigger is vetted directly against primary clinical veterinary texts to ensure maximum safety.
+                      For authoritative, up-to-date dosing guidance, consult{' '}
+                      <a href="https://www.merckvetmanual.com/" target="_blank" rel="noopener noreferrer" className="text-pink-700 font-semibold underline">Merck Veterinary Manual</a>
+                      {' '}or your veterinarian directly. For suspected poisoning or overdose, contact the{' '}
+                      <a href="https://www.aspca.org/pet-care/aspca-poison-control" target="_blank" rel="noopener noreferrer" className="text-pink-700 font-semibold underline">ASPCA Animal Poison Control Center</a>
+                      {' '}((888) 426-4435) or your emergency vet immediately. Cats have unique drug sensitivities (e.g. NSAIDs, acetaminophen) — never assume a dog dose is safe to scale down.
                     </p>
                   </div>
                 </div>
@@ -1848,17 +1825,16 @@ export default function CatDosageDashboard() {
               <span className="font-extrabold text-white text-base tracking-tight">Dosage for Cats</span>
             </div>
             <p className="text-xs leading-relaxed max-w-sm">
-              An independent veterinary medical information service designed to empower cat parents with mathematically precise, fully transparent dosing estimators. Medically reviewed by licensed professionals.
+              An independent reference tool designed to give cat parents mathematically precise, fully transparent dosing estimates. Not written or reviewed by a licensed veterinarian.
             </p>
           </div>
 
           <div className="space-y-4">
-            <h4 className="text-xs font-extrabold text-white uppercase tracking-wider">Clinical Sources</h4>
+            <h4 className="text-xs font-extrabold text-white uppercase tracking-wider">Reference Sources</h4>
             <ul className="text-xs space-y-2 font-medium">
               <li>Plumb’s Veterinary Drug Handbook (Feline)</li>
               <li>Merck Veterinary Manual</li>
               <li>ISFM Feline Pain Management Guidelines</li>
-              <li>Dr. Emily Jenkins Clinical Archives</li>
             </ul>
           </div>
 
