@@ -225,12 +225,12 @@ export default function CatDosageDashboard() {
     "@graph": [
       {
         "@type": "WebApplication",
-        "@id": "https://dogdosagecalculators.com/cats/#webapp",
+        "@id": "https://sadiyaqeen92639572-cloud.github.io/cat-dosage-calculator/#webapp",
         "name": "Cat Dosage Calculators",
         "applicationCategory": "HealthApplication",
         "operatingSystem": "All",
         "description": "Calculate safe, weight-based dosage estimations for 15 common feline medications like Gabapentin, Clavamox, Cerenia, and Prednisolone.",
-        "url": "https://dogdosagecalculators.com/cats",
+        "url": "https://sadiyaqeen92639572-cloud.github.io/cat-dosage-calculator/",
         "offers": {
           "@type": "Offer",
           "price": "0",
@@ -243,8 +243,28 @@ export default function CatDosageDashboard() {
         }
       },
       {
+        "@type": "MedicalWebPage",
+        "@id": "https://sadiyaqeen92639572-cloud.github.io/cat-dosage-calculator/#medicalwebpage",
+        "url": "https://sadiyaqeen92639572-cloud.github.io/cat-dosage-calculator/",
+        "name": "Cat Medication Dosage Calculator by Weight",
+        "lastReviewed": "2026-07-01",
+        "reviewedBy": {
+          "@type": "Organization",
+          "name": "Dosage for Cats Editorial Team",
+          "url": "https://sadiyaqeen92639572-cloud.github.io/cat-dosage-calculator/#about-modal"
+        },
+        "about": {
+          "@type": "MedicalCondition",
+          "name": "Feline medication dosing"
+        },
+        "audience": {
+          "@type": "MedicalAudience",
+          "audienceType": "Patient"
+        }
+      },
+      {
         "@type": "FAQPage",
-        "@id": "https://dogdosagecalculators.com/cats/#faq",
+        "@id": "https://sadiyaqeen92639572-cloud.github.io/cat-dosage-calculator/#faq",
         "mainEntity": [
           {
             "@type": "Question",
@@ -378,7 +398,7 @@ export default function CatDosageDashboard() {
               Independent Reference Tool
             </span>
             <span className="text-slate-300">|</span>
-            <span>Last updated: <strong>June 29, 2026</strong></span>
+            <span>Last updated: <strong>July 1, 2026</strong></span>
             <span className="text-slate-300">|</span>
             <span className="hidden sm:inline text-slate-300">|</span>
             <span>Sources: <strong>Merck Veterinary Manual &amp; Plumb&apos;s Feline Handbook</strong></span>
@@ -1321,11 +1341,14 @@ export default function CatDosageDashboard() {
                 Every calculation matrix, threshold multiplier, and safety warning provided on this page has been compiled directly from standard reference texts in professional veterinary pharmacotherapy:
               </p>
               <ul className="text-xs text-slate-600 leading-relaxed list-disc list-inside space-y-1">
-                <li><strong>Plumb’s Veterinary Drug Handbook (10th Feline Edition)</strong></li>
-                <li><strong>The Merck Veterinary Manual (Feline Medicine Guidelines)</strong></li>
+                <li><strong>Plumb&apos;s Veterinary Drug Handbook (10th Feline Edition)</strong> — <a href="https://plumbs.com/" target="_blank" rel="noopener noreferrer" className="text-pink-700 underline">plumbs.com</a></li>
+                <li><strong>The Merck Veterinary Manual (Feline Medicine Guidelines)</strong> — <a href="https://www.merckvetmanual.com/" target="_blank" rel="noopener noreferrer" className="text-pink-700 underline">merckvetmanual.com</a></li>
                 <li><strong>Feline Internal Medicine (Elsevier Health Sciences)</strong></li>
-                <li><strong>ISFM consensus guidelines on managing feline acute pain</strong></li>
+                <li><strong>ISFM / iCatCare consensus guidelines on feline NSAID use and acute pain</strong> — <a href="https://icatcare.org/news/new-guidelines-on-the-long-term-use-of-nsaids-in-cats" target="_blank" rel="noopener noreferrer" className="text-pink-700 underline">icatcare.org</a></li>
               </ul>
+              <p className="text-[11px] text-slate-400">
+                Also cross-referenced against public guidance from the <a href="https://www.avma.org/" target="_blank" rel="noopener noreferrer" className="text-pink-700 underline">American Veterinary Medical Association (AVMA)</a> and <a href="https://www.wsava.org/" target="_blank" rel="noopener noreferrer" className="text-pink-700 underline">World Small Animal Veterinary Association (WSAVA)</a> where publicly available — not a claim of formal quarterly review by either body.
+              </p>
             </div>
 
             <div className="space-y-4">
@@ -1788,12 +1811,13 @@ export default function CatDosageDashboard() {
                 <div className="space-y-4 animate-in fade-in duration-200 font-sans">
                   <h4 className="font-extrabold text-slate-950 text-base">Our Integrity &amp; Transparency Pledge</h4>
                   <p>
-                    At Dosage for Dogs and Dosage for Cats, we believe complete trust is mandatory when addressing pet health and medication safety. Because of this, we operate under strict E-E-A-T (Experience, Expertise, Authoritativeness, and Trustworthiness) editorial criteria:
+                    At Dosage for Dogs and Dosage for Cats, we believe complete trust is mandatory when addressing pet health and medication safety. Because of this, we hold ourselves to strict transparency criteria — and we&apos;d rather be precise than sound more authoritative than we are:
                   </p>
                   <ul className="list-disc list-inside space-y-2 text-xs">
-                    <li><strong>No AI-Generated Medical Advice:</strong> All calculators are programmatically driven by explicit, hardcoded mathematical parameters approved by licensed veterinarians, not probabilistic AI guesses.</li>
-                    <li><strong>Independent &amp; Ad-Free:</strong> We carry zero affiliation with pharmaceutical conglomerates. Our calculations are unbiased, and our guidelines are based strictly on pure scientific medicine.</li>
-                    <li><strong>Continuous Integration Checks:</strong> The clinical equations are checked quarterly against the latest updates from the American Veterinary Medical Association (AVMA) and World Small Animal Veterinary Association (WSAVA).</li>
+                    <li><strong>No AI-Generated Medical Advice:</strong> Every calculator is driven by explicit, hardcoded mathematical parameters — not a probabilistic AI guess — so the same weight and drug always produce the same result.</li>
+                    <li><strong>Independent &amp; Ad-Free:</strong> We carry zero affiliation with pharmaceutical conglomerates. Our calculations are unbiased, and our guidelines are based strictly on published veterinary reference sources.</li>
+                    <li><strong>Not individually vet-reviewed:</strong> No specific veterinarian has personally reviewed or endorsed this tool. Dosage tables are compiled and cross-checked against the named published sources in the Editorial Methodology tab, and revised when we identify an update to one of those sources — that review process is source-checking, not a clinical sign-off, and we don&apos;t claim otherwise.</li>
+                    <li><strong>Open and auditable:</strong> The full calculation logic is publicly version-controlled on <a href="https://github.com/sadiyaqeen92639572-cloud/cat-dosage-calculator" target="_blank" rel="noopener noreferrer" className="text-pink-700 font-semibold underline">GitHub</a> — anyone can inspect exactly how a result is produced.</li>
                   </ul>
                 </div>
               )}
