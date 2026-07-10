@@ -20,6 +20,23 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://sadiyaqeen92639572-cloud.github.io/cat-dosage-calculator'),
   alternates: { canonical: 'https://sadiyaqeen92639572-cloud.github.io/cat-dosage-calculator/' },
   verification: { google: '76BtuPWapEs7YKz4n_-PAXK_31eyF1SGsayZYBetFMg' },
+  icons: {
+    icon: [
+      { url: '/favicon.svg', type: 'image/svg+xml' },
+      { url: '/favicon.png', type: 'image/png' },
+    ],
+  },
+  openGraph: {
+    title: 'Cat Medication Dosage by Weight | Gabapentin, Clavamox, Cerenia & More',
+    description: 'Calculate common cat medication dosages by weight with easy, fast, and clear calculators.',
+    type: 'website',
+    url: 'https://sadiyaqeen92639572-cloud.github.io/cat-dosage-calculator/',
+    images: [{ url: '/og-image.png', width: 1200, height: 630 }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    images: ['/og-image.png'],
+  },
 };
 
 export default function RootLayout({children}: {children: React.ReactNode}) {
