@@ -239,7 +239,10 @@ export default function CatDosageDashboard() {
         "author": {
           "@type": "Organization",
           "name": "Dosage for Cats Editorial Team",
-          "url": "https://sadiyaqeen92639572-cloud.github.io/cat-dosage-calculator/#about-modal"
+          "url": "https://sadiyaqeen92639572-cloud.github.io/cat-dosage-calculator/#about-modal",
+          "legalName": "Gesmine-Invest Limited",
+          "identifier": { "@type": "PropertyValue", "propertyID": "UK Company Number", "value": "14120136" },
+          "address": { "@type": "PostalAddress", "streetAddress": "Hardy House, 269 Poynders Gardens", "addressLocality": "London", "postalCode": "SW4 8PQ", "addressCountry": "GB" }
         }
       },
       {
@@ -1883,6 +1886,9 @@ export default function CatDosageDashboard() {
             <button onClick={() => setIsAboutModalOpen(true)} className="hover:text-slate-300 transition-colors cursor-pointer">Editorial Board</button>
             <button onClick={() => setIsAboutModalOpen(true)} className="hover:text-slate-300 transition-colors cursor-pointer">Integrity Pledge</button>
           </div>
+        </div>
+        <div className="max-w-7xl mx-auto pt-4 text-[10px] text-slate-500">
+          Dosage for Cats is part of Gesmine-Invest Limited, registered UK company number 14120136, registered office address at Hardy House, 269 Poynders Gardens, London, London, United Kingdom, SW4 8PQ.
         </div>
       </footer>
 
